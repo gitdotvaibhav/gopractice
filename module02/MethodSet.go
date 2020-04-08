@@ -22,5 +22,9 @@ func main() {
 
 	u := user{name: "vaibhav", email: "vabhi42"}
 
-	u.notify()
+	sendNotification(u)
+}
+
+func sendNotification(n user) {
+	n.notify()
 }
